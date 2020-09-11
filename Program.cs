@@ -11,8 +11,8 @@ namespace _35zg2t
         }
         public static void month()
             {
-                System.Console.WriteLine("skriv in månaden du är född i svara med 1 - 12 :");
-                var monthdate = int.Parse(Console.ReadLine());
+                System.Console.WriteLine("skriv in månaden du är född i:");
+                string monthdate = Console.ReadLine();
                 string [] monthdayindex = {
                     "januari",
                     "februari",
@@ -29,21 +29,21 @@ namespace _35zg2t
                 };
 
                 int result = Array.IndexOf(monthdayindex, monthdate) +1;
-                System.Console.WriteLine(result);
+                System.Console.WriteLine(result + " är månadens nummer");
 
 
 
 
+                System.Console.WriteLine("skriv in vilken dag du är född i");
+                    int day = int.Parse(Console.ReadLine());
+                    string stringday = "" + day;
+                        if(stringday.Length == 1){
+                        stringday = "0" + day;     
+                        }
 
-            int day = int.Parse(Console.ReadLine());
-            string stringday = "" + day;
-                if(stringday.Length == 1){
-                   stringday = "0" + day;     
-                }
 
-
-                string completedate =  monthdate + stringday;
-
+                string completedate =  result + stringday;
+                
                 int resultdata = int.Parse(completedate);
 
                 String starsign  = "";
