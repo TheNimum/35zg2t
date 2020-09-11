@@ -9,7 +9,7 @@ namespace _35zg2t
             month();
             Console.ReadKey ();
         }
-        public static void month(string[] args)
+        public static void month()
             {
                 System.Console.WriteLine("skriv in månaden du är född i svara med 1 - 12 :");
                 var monthdate = int.Parse(Console.ReadLine());
@@ -37,72 +37,73 @@ namespace _35zg2t
 
             int day = int.Parse(Console.ReadLine());
             string stringday = "" + day;
-                if(stringday.lengt == 1){
+                if(stringday.Length == 1){
                    stringday = "0" + day;     
                 }
 
-                string completedate =  monthly + stringday;
+
+                string completedate =  monthdate + stringday;
 
                 int resultdata = int.Parse(completedate);
 
                 String starsign  = "";
 
-                if(321 >= && => 419 ) {
+                if(321 <= resultdata && resultdata <= 419 ) {
                     starsign = "väduren";
 
                 }
-                else if(420 >= && => 520 ) {
+                else if(420 <= resultdata && resultdata <= 520  ) {
                     starsign = "oxen";
 
                 }
-                else if(521 >= && => 621 ) {
+                else if(521 <= resultdata && resultdata <= 621 ) {
                     starsign = "tvillingen";
 
                 }
-                else if(622 >= && => 722 ) {
+                else if(622 <= resultdata && resultdata <= 722 ) {
                     starsign = "kräftan";
 
                 }
-                else if(723 >= && => 822 ) {
+                else if(723 <= resultdata && resultdata <= 822 ) {
                     starsign = "lejonet";
 
                 }
-                else if(823 >= && => 922 ) {
+                else if(823 <= resultdata && resultdata <= 922 ) {
                     starsign = "ljungfrun";
 
                 }
-                else if(923 >= && => 1022 ) {
+                else if(923 <= resultdata && resultdata <= 1022 ) {
                     starsign = "vågen";
 
                 }
-                else if(1023 >= && => 1121 ) {
+                else if(1023 <= resultdata && resultdata <= 1121 ) {
                     starsign = "skorpionen";
 
                 }
-                else if(1122 >= && => 119 ) {
+                else if(1122 <= resultdata && resultdata <= 1221 ) {
                     starsign = "skytten";
 
                 }
-                else if(120 >= && => 218 ) {
+                else if(1222 <= resultdata || resultdata <= 119 ) {
                     starsign = "stenbocken";
 
                 }
-                else if(xxxx >= && => xxxx ) {
+                else if(120 <= resultdata && resultdata <= 218 ) {
                     starsign = "vattunmannen";
 
                 }
-                else if(219 >= && => 320 ) {
+                else if(219 <= resultdata && resultdata <= 320 ) {
                     starsign = "fiskar";
 
                 }
 
-                Console.WriteLine($"du är född i {month} och du är stjärntecknet {starsign}");
+                Console.WriteLine($"du är född i {result} och du är stjärntecknet {starsign}");
         
             
 
            
 
-            }
+           
             
             
             Console.ReadLine();
