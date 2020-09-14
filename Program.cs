@@ -40,6 +40,7 @@ namespace _35zg2t
                         if(stringday.Length == 1){
                         stringday = "0" + day;     
                         }
+                        
 
 
                 string completedate =  result + stringday;
@@ -97,7 +98,7 @@ namespace _35zg2t
 
                 }
 
-                Console.WriteLine($"du är född i {result} och du är stjärntecknet {starsign}");
+                Console.WriteLine($"du är född i {monthdate} och du är stjärntecknet {starsign}");
         
             
 
