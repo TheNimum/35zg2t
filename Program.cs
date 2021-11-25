@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Linq; // inte säker på om jag ska använda den men om i sådana fall hur ska jag göra det. 
+using System.Linq; 
 namespace _35zg2t
 {
     class Program
